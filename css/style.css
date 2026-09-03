@@ -550,6 +550,88 @@ h3 {
   text-decoration-thickness: 2px;
 }
 
+.trust-experience .split {
+  align-items: start;
+  gap: 2rem;
+}
+
+.trust-experience p {
+  color: var(--gray-700);
+}
+
+.trust-points {
+  list-style: none;
+  margin: 1.1rem 0 1.25rem;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.trust-points li {
+  margin: 0;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  padding: 0.72rem 0.9rem;
+  line-height: 1.5;
+}
+
+.trust-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 0.95rem;
+}
+
+.teacher-photo {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow);
+  background: var(--white);
+}
+
+.teacher-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teacher-photo.primary {
+  aspect-ratio: 4 / 5;
+}
+
+.trust-videos {
+  display: grid;
+  gap: 0.95rem;
+}
+
+.trust-video-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 0.9rem;
+  box-shadow: var(--shadow);
+}
+
+.trust-video-card h3 {
+  margin: 0 0 0.55rem;
+  font-size: 1rem;
+}
+
+.trust-video-card .short-video {
+  padding-top: 177.78%;
+  max-width: 320px;
+  margin-inline: auto;
+}
+
+@media (max-width: 640px) {
+  .trust-media {
+    grid-template-columns: 1fr;
+  }
+}
+
 .pricing-grid {
   display: grid;
   gap: 1.25rem;
@@ -812,6 +894,16 @@ textarea:focus {
   .split {
     grid-template-columns: 1.1fr 0.9fr;
     align-items: center;
+  }
+
+  .trust-experience .split {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .trust-media {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
   }
 
   .field-grid {
