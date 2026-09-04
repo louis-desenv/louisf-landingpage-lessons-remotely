@@ -25,7 +25,12 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap">
+  <link rel="dns-prefetch" href="//www.youtube-nocookie.com">
+  <link rel="dns-prefetch" href="//img.youtube.com">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"></noscript>
+  <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
   <!-- TODO: Replace your-domain.com, WhatsApp number, and Formspree form ID before publishing. -->
 
@@ -236,7 +241,7 @@
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a class="logo" href="index.html" aria-label="Louis F Guitar home">
-        <img class="logo-mark" src="images/logo-louis-f.png" alt="Louis F Guitar logo" width="313" height="313">
+        <img class="logo-mark" src="images/logo-louis-f-64.png" srcset="images/logo-louis-f-64.png 64w, images/logo-louis-f-112.png 112w, images/logo-louis-f.png 313w" sizes="(max-width: 760px) 44px, 56px" alt="Louis F Guitar logo" width="56" height="56" decoding="async" fetchpriority="high">
         <span class="logo-title">Louis F Guitar</span>
       </a>
       <nav aria-label="Primary navigation">
@@ -376,7 +381,10 @@
         </div>
         <div class="trust-media">
           <figure class="teacher-photo primary">
-            <img src="images/teacher-portrait.png" alt="Louis smiling inside a professional recording studio." loading="lazy" width="496" height="859">
+            <picture>
+              <source srcset="images/teacher-portrait.jpg" type="image/jpeg">
+              <img src="images/teacher-portrait.png" alt="Louis smiling inside a professional recording studio." loading="lazy" width="491" height="860" sizes="(max-width: 640px) 100vw, (max-width: 1100px) 45vw, 420px" decoding="async" fetchpriority="low">
+            </picture>
           </figure>
           <div class="trust-videos">
             <article class="trust-video-card">
